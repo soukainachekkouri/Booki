@@ -1,0 +1,193 @@
+/* Définition des polices personnalisées */
+@import url("http://fonts.googleapis.com/css?family=Lato|Raleway&subset=latin,latin-ext");
+
+ /* Elements principaux de la page */
+
+body
+{
+    font-family: 'Raleway';
+    color: black;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+#slogan
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo img
+{
+    width: 85px;
+    height: 50px;
+}
+
+#logo
+{
+    margin-left: 5%;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 45px;
+}
+
+nav a
+{
+    font-size: 0.9em;
+    color: grey;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover 
+{
+    color: #1F29F5;
+    border-top: 3px solid #1F29F5;
+}
+
+/* Le container*/ 
+
+#main_container
+{
+    margin: 0px 50px 60px 50px;
+}
+
+#main_container .slogan p
+{
+    font-size: 16px;
+}
+
+#main_container .slogan p
+{
+    margin: 15px auto;
+    font-family: 'Raleway';
+}
+
+p
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+h1
+{
+    display: block;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+/* Localisation */
+
+form
+{
+    margin-bottom: 30px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+
+input[type="text"] {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 75px;
+    font-family: 'Raleway-Bold', sans-serif;
+    border: solid 1px #f2f2f2;
+    outline: none;
+    text-align: center;
+}
+
+
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+input
+{
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-image: initial;
+}
+
+
+#search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color: #0065fc;
+    border: solid 1px #0065fc;
+    border-radius: 0 12px 12px 0;
+    padding: 10px 15px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon_geo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #f2f2f2;
+    border-radius: 12px 0 0 12px;
+    padding: 15px;
+}
+
+
+
+.fas fa-map-marker-alt
+{
+    color: black;
+}
+
+
+
+#icon_geo
+{
+    color: transparent;
+}
+
