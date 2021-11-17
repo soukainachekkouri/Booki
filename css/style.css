@@ -67,6 +67,7 @@ nav a:hover
 #main_container
 {
     margin: 0px 50px 60px 50px;
+    margin-top: 25px;
 }
 
 #main_container .slogan p
@@ -91,11 +92,11 @@ p
     font-size: 18px;
 }
 
-h1
+h3
 {
     display: block;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* Localisation */
@@ -191,3 +192,124 @@ input
     color: transparent;
 }
 
+
+/* Les filtres */
+
+ul
+{
+    list-style-type: none;
+    
+}
+
+.liste_filtres /* aligne le texte au boutons */ 
+{
+    display: inline-flex; /*aligne les boutons sur la longueur */
+}
+
+.les_filtres
+{
+}
+
+.filtres /*concerne les boutons*/
+{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 10px 15px 10px 10px;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+.filtres:hover
+{
+    background-color: #0065fc;
+}
+
+.icones_filtres
+{
+  color: #0065fc;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 40px 40px 40px 40px;
+  width: 20px;
+  
+  
+}
+
+.texte_filtre
+{
+  font-size: 15px;
+  color: black;
+}
+
+/* les infos */
+
+.infos /* aligne le texte au boutons */ 
+{
+  display:flex;
+  align-items: baseline;
+  justify-content: baseline;
+  font-size: 12px;
+}
+
+.infos, p
+{
+    font-size: 15px;
+}
+
+.icones_infos
+{
+    border-radius: 50%;
+    color: #0065fc;
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 10px 15px 10px 10px;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+/* Le corps */ 
+
+section
+{
+    display: flex;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 5px;
+    flex: 0.7;
+    background-color: hsl(0 0% 92%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+aside
+{
+    flex: 0.4;
+    position: relative;
+    background-color: hsl(0 0% 92%);
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.icones_increase
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-left: 250px;
+}
+
+aside, h1
+{
+    margin-left: 16px;
+    font-family: "Raleway";
+    font-style: bold;
+}

@@ -2,6 +2,7 @@
 <html> 
     <head>
       <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/normalize.css"/>
       <link rel="stylesheet" href="css/style.css"/>
       <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
       <title>Booki</title>
@@ -24,7 +25,7 @@
 
       <main id="main_container">
           <div id="slogan">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
           </div>
           <form action="#">
@@ -38,16 +39,60 @@
               
             </button>
           </form>
-          <div>
-          !!à partir d'ici, tout se fait dans le main!!
-          cette div pour les filtres
+          <div class="les_filtres">
+            <span class="titre_filtres">Filtres</span> à dégager ?
+            <ul class="liste_filtres">
+              <li>
+                <button class="filtres">
+                  <span class="icones_filtres">
+                    <i class="fas fa-money-bill-wave" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="texte_filtre">Économique</span>
+                </button>
+              </li>
+              <li>
+                <button class="filtres">
+                  <span class="icones_filtres">
+                    <i class="fas fa-child" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="texte_filtre">Familial</span>
+                </button>
+              </li>
+              <li>
+                <button class="filtres">
+                  <span class="icones_filtres">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                  <span class="texte_filtre">Romantique</span>
+                </button>
+              </li>
+              <li>
+                <button class="filtres">
+                  <span class="icones_filtres">
+                    <i class="fas fa-dog"></i>
+                  </span>
+                  <span class="texte_filtre">Animaux autorisés</span>
+                </button>
+              </li>
+            </ul>
           </div> 
+          <div class="infos">
+            <span class="icones_infos">
+              <i class="fas fa-info" aria-hidden="true"></i>
+            </span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
           <section>
             <article>
-              pour hébergements à marseille
+              <h1>Hébergements à Marseille</h1>
             </article> 
             <aside>
-              pour les plus populaires
+              <h1>Les plus populaires</h1>
+              <span class="icones_increase">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+              </span>
             </aside>
           </section>
           <section>
