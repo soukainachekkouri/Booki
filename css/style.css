@@ -1,12 +1,21 @@
 /* Définition des polices personnalisées */
 @import url("http://fonts.googleapis.com/css?family=Lato|Raleway&subset=latin,latin-ext");
 
- /* Elements principaux de la page */
+
+
+/* Elements principaux de la page */
 
 body
 {
     font-family: 'Raleway';
     color: black;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#bloc_page
+{
+    width: auto;
     margin: auto;
 }
 
@@ -17,7 +26,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 15px;
+    padding-top: 30px;
 }
 
 #slogan
@@ -34,7 +43,7 @@ header
 
 #logo
 {
-    margin-left: 5%;
+    margin-left: 2.1%;
 }
 
 nav ul
@@ -50,8 +59,8 @@ nav li
 
 nav a
 {
-    font-size: 0.9em;
-    color: grey;
+    font-size: 1em;
+    color: black;
     padding-bottom: 3px;
     text-decoration: none;
 }
@@ -59,20 +68,159 @@ nav a
 nav a:hover 
 {
     color: #1F29F5;
-    border-top: 3px solid #1F29F5;
+    
 }
+
+
+
+/*Responsive*/ 
+@media all and (max-width : 992px) /*Ordi*/
+{
+    #bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }    
+}
+
+@media all and (max-width : 768px) /*Tablette*/
+{
+    #bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+    #bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }
+
+/*Header*/
+    header 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo img 
+    {
+        width: 100%;
+        height: 50%;        
+    }
+
+    nav a 
+    {
+        font-size: 2.7em;
+    }
+
+    div.bordure 
+{
+    border-bottom:1px solid black;
+    margin-top: 0%;
+}
+
+/*La top phrase*/
+#main_container
+{
+    margin: 0px 50px 60px 50px;
+    padding-top: 5%;
+    
+}
+
+#slogan h3 
+{
+    font-size: 4em;
+    margin-left: 2px;
+    margin: 15px 5px 5px 7px;
+}
+
+#slogan p 
+{
+    font-size: 2.8em;
+    margin: 25px 5px 5px 7px;
+}
+
+/*Recherche par localisation*/
+
+form
+{
+    margin-top: 40px;
+}
+
+form
+{
+    height: 45px;
+}
+
+form .icon_geo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #f2f2f2;
+    border-radius: 12px 0 0 12px;
+    padding: 45px;
+}
+
+form input[type="text"] {
+    color: #000;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 44px;
+    font-family: 'Raleway-Bold', sans-serif;
+    border: solid 1px #f2f2f2;
+    outline: none;
+    text-align: center;
+}
+
+form #search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 34px;
+    background-color: #0065fc;
+    border: solid 1px #0065fc;
+    border-radius: 0 12px 12px 0;
+    padding: 44px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Les filtres*/ 
+div .les_filtres
+{
+    margin-top: 10%;
+    font-size: 45px;
+}
+
+div #titre_filtres
+{
+    font-size: 20px;
+}
+
+
+}
+/*Fin Responsive*/
 
 /* Le container*/ 
 
 #main_container
 {
     margin: 0px 50px 60px 50px;
-    margin-top: 25px;
+    
 }
 
 #main_container .slogan p
 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #main_container .slogan p
@@ -84,19 +232,15 @@ nav a:hover
 p
 {
     display: block;
-    margin-block-start: 1em;
-    margin-inline-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 15px;
 }
 
 h3
 {
     display: block;
     margin-bottom: 0px;
-    font-size: 22px;
+    font-size: 26px;
+    
 }
 
 /* Localisation */
@@ -208,6 +352,7 @@ ul
 
 .les_filtres
 {
+    
 }
 
 .filtres /*concerne les boutons*/
@@ -228,6 +373,8 @@ ul
 .icones_filtres
 {
   color: #0065fc;
+  width: 100%;
+  height: 150%;
   display: inline-block;
   justify-content: center;
   border-radius: 40px 40px 40px 40px;
@@ -240,34 +387,49 @@ ul
 {
   font-size: 15px;
   color: black;
+  font-weight: 900;
+  padding-left: 5px;
 }
+
+.fas fa-info
+{
+    border: solid 1px #0065fc;
+    width: 20px;
+    height: 20px;
+}
+
 
 /* les infos */
 
 .infos /* aligne le texte au boutons */ 
 {
   display:flex;
-  align-items: baseline;
-  justify-content: baseline;
-  font-size: 12px;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .infos, p
 {
     font-size: 15px;
+    margin-left: 10px;
 }
 
 .icones_infos
 {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #f2f2f2;
     border-radius: 50%;
     color: #0065fc;
-    background-color: #f2f2f2;
-    margin: 10px;
-    padding: 10px 15px 10px 10px;
-    border: solid 1px;
-    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
 }
 
+.fas fa-info
+{
+    margin-left: 5px;
+}
 /* Le corps */ 
 
 section
