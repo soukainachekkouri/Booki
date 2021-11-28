@@ -229,11 +229,7 @@ div #titre_filtres
     font-family: 'Raleway';
 }
 
-p
-{
-    display: block;
-    margin-top: 15px;
-}
+
 
 h3
 {
@@ -407,7 +403,6 @@ ul
 .infos, p
 {
     font-size: 15px;
-    margin-left: 10px;
 }
 
 .icones_infos
@@ -481,7 +476,6 @@ aside, h1
 {
     background: #f2f2f2;
     border-radius: 12px 12px 12px 12px;
-    margin-right: 1;
     padding: 5px 5px 5px 15px;
 }
 
@@ -490,8 +484,6 @@ aside, h1
     font-size: 18px;
     font-weight: 900;
 }
-
-
 
 .hebergement_une_carte
 {
@@ -502,6 +494,7 @@ aside, h1
     padding: 5px;
     text-decoration: solid;
     width: 30%;
+    margin : 2% 3% 4% 2%;
 }
 
 .hebergement_photo
@@ -514,14 +507,27 @@ aside, h1
 .hebergement_titre_card, h1
 {
     color: black;
-    font-size: 20px;
-    margin-top: 2%;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 4%;
     margin-bottom: 2%;
-    margin-left: 0;
+    margin-left: 5%;
 }
 
-.hebergement_note, p 
+.hebergement_prix
 {
-    margin-left: 0;
-    
+    color: black;
+    margin-top: 5%;
+}
+
+.hebergement_note
+{
+    margin-left: 5%;
+    color: #0065fc;
+}
+
+div.hebergement_all_cards
+{
+    display: flex;
+    flex-direction: column;
 }
