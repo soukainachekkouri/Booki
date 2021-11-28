@@ -491,15 +491,37 @@ aside, h1
     font-weight: 900;
 }
 
+
+
 .hebergement_une_carte
 {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 5%;
+    padding: 5px;
+    text-decoration: solid;
+    width: 30%;
 }
 
-.hebergement_image
+.hebergement_photo
 {
-    border-top-left-radius: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.hebergement_titre_card, h1
+{
+    color: black;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+}
+
+.hebergement_note, p 
+{
+    margin-left: 0;
+    
 }
