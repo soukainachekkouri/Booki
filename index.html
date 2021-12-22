@@ -2,8 +2,14 @@
 <html> 
     <head>
       <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="css/normalize.css"/>
       <link rel="stylesheet" href="css/style.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
       <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
       <title>Booki</title>
     </head>
@@ -37,11 +43,13 @@
             <input type="text" name="rechercher" placeholder="Marseille, France" maxlength="20" size="20">
             <button type="submit" id="search">
               <span id="search_text">Rechercher</span>
+              <i class="fas fa-search" id="loupe"></i>
               
             </button>
           </form>
           <div class="les_filtres">
             <span class="titre_filtres">Filtres</span> 
+            <div class="all_filters">
                 <button class="filtres">
                   <span class="icones_filtres">
                     <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
@@ -69,7 +77,7 @@
                   </span>
                   <span class="texte_filtre">Animaux autorisés</span>
                 </button>
-
+              </div>
           </div> 
           <div class="infos">
             <span class="icones_infos">
@@ -181,8 +189,7 @@
               </p>
             </div>
               <aside class="populaire" id="bloc_populaire">
-                <h1 class="sectiontitle">
-                  <strong>Les plus populaires</strong> 
+                <h1 class="sectiontitle">Les plus populaires
                 <i class="fas fa-chart-line" aria-hidden="true"></i>  
                 </h1>
               <div class="all_popular_cards">
@@ -201,7 +208,7 @@
                   </div>
                 </a>
                 <a class="popular_card" href="#">
-                    <img class="popular_image" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                    <img class="popular_image" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau">
                   <div class="popular_part_text">
                     <h3 class="popular_card_title">Au coeur de l'eau Chambres d'hôtes</h3>
                     <p class="popular_price">Nuit à partir de <strong>71€</strong></p>
@@ -231,23 +238,120 @@
               </div>
             </aside>
           </section>
-          <section class="activities" id="activities">
-            <div class="activity" id="activity">
-              <h1 id="activity_title">Activités à Marseille</h1>
+          <section id="activities">
+            <div class="activity_part">
+              <h2 class="activity_title">Activités à Marseille</h2>
               <div class="all_activity_cards">
-                <a class="activity_card" href="#">
-                  <div class="activity_image">
-                    <img class="activity_photo" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                    <div class="activity_text">
-                      <h4>Vieux port</h4>
+                <div class="column1 activity_col">
+                  <a class="activity_card carte1" href="#">
+                    <div class="activity_photo">
+                      <img class="activity_image" src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
                     </div>
+                    <div class="activity_box_texte">
+                      <h4 class="activity_texte">Vieux port</h4>
+                    </div>
+                  </a>
+                </div>
+                <div class="column2 activity_col">
+                  <div class="column2_2part">
+                    <a class="activity_card carte2" href="#">
+                      <div class="activity_photo">
+                        <img class="activity_image2" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="For de Pomegues">
+                      </div>
+                      <div class="activity_box_texte">
+                        <h4 class="activity_texte">Fort de Pomègues</h4>
+                      </div>
+                    </a>
                   </div>
-                </a>
+                  <div class="column2_3part">
+                    <a class="activity_card carte2" href="#">
+                      <div class="activity_photo">
+                        <img class="activity_image3" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile du frioul">
+                      </div>
+                      <div class="activity_box_texte">
+                        <h4 class="activity_texte">Île du Frioul</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column1 activity_col">
+                  <a class="activity_card carte1" href="#">
+                    <div class="activity_photo">
+                      <img class="activity_image" src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Notre Dame de la Garde">
+                    </div>
+                    <div class="activity_box_texte">
+                      <h4 class="activity_texte">Notre-Dame-de-la-Garde</h4>
+                    </div>
+                  </a>
+                </div>
+                <div class="column2 activity_col">
+                  <div class="column2_3part">
+                    <a class="activity_card carte2" href="#">
+                      <div class="activity_photo">
+                        <img class="activity_image3" src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Parc Longchamp">
+                      </div>
+                      <div class="activity_box_texte">
+                        <h4 class="activity_texte">Parc Longchamp</h4>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="column2_2part">
+                    <a class="activity_card carte2" href="#">
+                      <div class="activity_photo">
+                        <img class="activity_image2" src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="For de Pomegues">
+                      </div>
+                      <div class="activity_box_texte">
+                        <h4 class="activity_texte">Fort de Pomègues</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
           <footer>
-            
+            <div class="about">
+              <h3>À propos</h3>
+              <div class="bloc1">
+                <ul>
+                  <li>
+                    <a href="#">Fonctionnement du site</a>
+                  </li>
+                  <li>
+                    <a href="#">Conditions générales de vente</a>
+                  </li>
+                  <li>
+                    <a href="#">Données de confidentialité</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="noshebergements">
+              <h3>Nos hébergements</h3>
+              <div class="bloc2">
+                <ul>
+                  <li>
+                    <a href="#">Charte qualité</a>
+                  </li>
+                  <li>
+                    <a href="#">Soumettre votre hôtel</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="assistance">
+              <h3>Centre d'aide</h3>
+              <div class="bloc3">
+                <ul>
+                  <li>
+                    <a href="#">Centre d'aide</a>
+                  </li>
+                  <li>
+                    <a href="#">Nous contacter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </footer>
         </main> 
         </div>

@@ -1,5 +1,4 @@
 /* Définition des polices personnalisées */
-@import url("http://fonts.googleapis.com/css?family=Lato|Raleway&subset=latin,latin-ext");
 
 
 
@@ -11,7 +10,7 @@ body
     color: black;
     margin-right: 15px;
     margin-left: 15px;
-    background-color: #fcfafa;
+    background-color: #ffffff;
 }
 
 #bloc_page
@@ -69,7 +68,7 @@ nav a
 nav a:hover 
 {
     color: #1F29F5;
-    
+    border-bottom: #0065fc;
 }
 
 /* Le container*/ 
@@ -126,7 +125,10 @@ input[type="text"] {
     text-align: center;
 }
 
-
+#loupe
+{
+    display: none;
+}
 
 input[type="text" i] {
     padding: 1px 2px;
@@ -144,7 +146,6 @@ input
     display: inline-block;
     text-align: start;
     appearance: auto;
-    -webkit-rtl-ordering: logical;
     cursor: text;
     background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
     margin: 0em;
@@ -207,26 +208,17 @@ ul
     margin-right: 15px;
 }
 
-.les_filtres
-{
-   display: flex;
-   align-items: center;
-
-}
-
 .filtres /*concerne les boutons*/
 {
-    display: flex;
+    
     align-items: center;
     border-radius: 40px 40px 40px 40px;
     background-color: #ffffff;
     margin: 10px;
     border: solid 2px;
     cursor: pointer;
-    height: 40px;
+    height: 36px;
     border-color: #e7e7e7; 
-    padding: 5px;
-    width: auto;
 }
 
 .filtres:hover
@@ -238,20 +230,20 @@ ul
 {
   color: #0065fc;
   background-color: #DEEBFF;
+  height: 0;
   border-radius: 100%;
-  margin-left: -5px;
-  height: 2.4rem;
-  width: 2.4rem;
-  line-height: 2.5;
-  align-items: center;
+  margin-left: -8px;
+  line-height: 1.7;
+  padding: 9px;
+
 }
 
 
 .texte_filtre
 {
-  font-size: 17px;
+  font-size: 18px;
   color: black;
-  font-weight: 900;
+  font-weight: 700;
   padding-left: 6px;
   padding-right: 7px;
 }
@@ -277,12 +269,17 @@ ul
 {
     flex-shrink: 0;
     width: 28px;
-    height: 28px;
     border: 1px solid #f2f2f2;
     border-radius: 50%;
     color: #0065fc;
     text-align: center;
     line-height: 28px;
+    margin-right: 15px;
+}
+
+.titre_filtres
+{
+    font-weight: 700;
 }
 
 .fas fa-info
@@ -320,7 +317,6 @@ aside, h1
 {
     margin-left: 16px;
     font-family: "Raleway";
-    font-style: bold;
 }
 
 /*Les hébergements à Marseille*/ 
@@ -335,8 +331,10 @@ aside, h1
 
 .titre_section
 {
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .hebergement_all_cards
@@ -364,7 +362,7 @@ aside, h1
 
 .hebergement_image
 {
-    width: 240px;
+    width: 96%;
     height: 150px;
     padding: 2%;
 }
@@ -419,6 +417,7 @@ aside, h1
     color: #0065fc;
 }
 
+/*Les plus populaires*/
 
 .popular_card
 {
@@ -434,7 +433,7 @@ aside, h1
 .sectiontitle
 {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 9%;
     display: flex;
     justify-content: space-between;
@@ -464,7 +463,6 @@ aside, h1
 }
 .popular_card
 {
-    padding: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -483,52 +481,402 @@ aside, h1
     color: #0065fc;
 }
 
-.activity_all_cards
+/*Les activités*/
+
+.activities
 {
-    background-color: #0065fc;
+    height: 200px;
+}
+
+.activity_title
+{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.all_activity_cards
+{
+    display: flex;
+}
+
+.column1, #activity_col /*Définie la premiere colonne*/
+{
+    background-color: #ffffff;
+    border-radius: 20px;
+    background-size: 20px 20px -100px 0px;
+    width: 300px;
+    height: 520px;
+    margin-right: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .activity_card
 {
-    text-decoration: none;
-    color: black;
+    display: flex;
+    flex-direction: column;
 }
+
+.column2_2part
+{
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-right: 30px;
+}
+
+.column2_3part
+{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.activity_box_texte
+{
+    margin-bottom: 30px;
+}
+.activity_texte
+{
+    margin-left: 20px;
+    display: flex;
+}
+
+
+.activity_image
+{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity_image2
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity_image3
+{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/*Footer*/
+footer
+{
+    background-color: #f2f2f2;
+    margin-left: -70px;
+    margin-right: -70px;
+    margin-top: 60px;
+    margin-bottom: -90px;
+    display: flex;
+    height: 150px;
+}
+
+.about
+{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.about h3
+{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.bloc1
+{
+    margin-right: 90px;
+}
+
+.noshebergements
+{
+    margin-top: 20px;
+}
+
+.noshebergements h3
+{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.bloc2
+{
+    margin-right: 90px;
+}
+
+.assistance
+{
+    margin-top: 20px;
+}
+
+.assistance h3
+{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
 
 /*Responsive*/ 
-@media all and (max-width : 992px) /*Ordi*/
+
+@media all and (max-width : 992px) /*Tablettes*/
 {
-    #bloc_page
-    {
-        width: auto;
-        margin: auto;
-    }
 
-    .hebergement_image
-    {
-        width: auto;
-        height: 150px;
-        padding: 2%;
-    }
+/*Header*/ 
 
-    .hebergement_text_card
-    {
-        margin-bottom: 5px;
-        margin-left: 5px;
-    }
+header 
+{
+    margin-right: -90px;
+}
+nav a 
+{
+    font-size: 22px;
 }
 
-@media all and (max-width : 768px) /*Tablette*/
+/* Le container*/ 
+
+#main_container
 {
-    #bloc_page
-    {
-        width: auto;
-        margin: auto;
-    }
+    margin: 0px 30px 40px 30px;
     
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+h3
 {
+    display: block;
+    margin-bottom: -4px;
+    font-size: 24px;
+    
+}
+
+.infos, p 
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*La recherche par localisation*/
+
+.icon_geo
+{
+    padding: 30px;
+    font-size: 20px;
+}
+
+input[type="text"]
+{
+    padding: 30px;
+    font-size: 20px;
+    text-align: start;
+}
+
+#search
+{
+    padding: 30px 20px 30px 30px;
+    font-size: 20px;
+}
+
+#search_text
+{
+    margin-left: -3.5px;
+}
+
+/*Les filtres*/
+
+.titre_filtres
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.les_filtres
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtres
+{
+    margin: 10px 10px 10px 5px;
+    height: 45px;
+    width: auto;
+    border-radius: 32px;
+}
+
+.icones_filtres
+{
+    padding: 13px;
+    margin-left: -5.4px;
+}
+
+/* Les infos*/ 
+
+
+.infos, p
+{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+/*Les plus populaires*/ 
+
+section
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+aside 
+{
+    border-radius: 0;
+    margin-left: -42px;
+    margin-right: -132px;
+}
+
+.sectiontitle
+{
+    margin-bottom: -10px;
+}
+
+.hebergement_titre_card, h1
+{
+    margin-top: 15px;
+}
+
+.all_popular_cards
+{
+    margin-bottom: 40px;
+}
+
+.popular_card
+{
+    margin-bottom: -30px;
+}
+
+.popular_image
+{
+    width: 300px;
+}
+
+/*Les hébergements à Marseille*/ 
+
+.hebergement
+{
+    background-color: #ffffff;
+    margin-left: -42px;
+    margin-right: -132px;
+}
+
+.hebergement_prix
+{
+    font-size: 16px;
+}
+
+.see_more
+{
+    font-weight: 700;
+}
+/*les activités à marseille*/ 
+
+
+.activity_part 
+{
+    margin-left: -42px;
+    padding-left: 5px;
+    background-color: #ffffff;
+}
+
+.all_activity_cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 17px;
+    margin-right: -100px;
+    align-content: center;
+    padding-left: 7px;
+}
+
+.activity_title
+{
+    padding-left: 15px;
+}
+
+.column1
+{
+    height: 200px;
+    width: 240px;
+    border: 5px solid #ffffff;
+    margin-right: 15px;
+}
+
+.activity_image
+{
+    height: 140px;
+    width: 240px;
+}
+
+.column2_2part
+{
+    height: 200px;
+    width: 240px;
+    border: 5px solid #ffffff;
+    margin-right: 10px;
+}
+
+.activity_image2
+{
+    height: 140px;
+    width: 240px;
+}
+
+.column2_3part
+{
+    height: 200px;
+    width: 240px;
+    border: 5px solid #ffffff;  
+    margin-right: 10px; 
+}
+
+.column2
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*footer*/
+
+footer 
+{
+    margin-right: -130px;
+}
+
+}
+
+@media all and (max-width : 767px) /*Tel*/
+{
+    body
+    {
+        margin-right: -50px;
+        margin-left: 0px;
+    }
+    
     #bloc_page
     {
         width: auto;
@@ -540,76 +888,89 @@ aside, h1
     {
         flex-direction: column;
         align-items: center;
+        margin-right: -90px;
     }
+
 
     #logo img 
     {
-        width: 100%;
-        height: 50%;        
+        width: 8rem;  
+        height: 4rem;
+        margin-bottom: 12px;
+        margin-left: 80px;      
     }
+
+
+    nav 
+    {
+        border-bottom: 3px solid #f2f2f2;
+        margin-top: 15px;
+    }
+
 
     nav a 
     {
-        font-size: 2.7em;
+        font-size: 20px;
+        padding: 52px;
     }
 
-    div.bordure 
-{
-    margin-top: 0%;
-}
+    nav li 
+    {
+        margin-left: 55px;
+    }
+
+    nav a:hover 
+    {
+        border-bottom: 3px solid #0065fc;
+   
+    }
+
 
 /*La top phrase*/
+
 #main_container
 {
-    margin: 0px 50px 60px 50px;
+    margin-top: 15px;
+    margin-right: -41px;
     padding-top: 5%;
     
 }
 
 #slogan h3 
 {
-    font-size: 4em;
-    margin-left: 2px;
-    margin: 15px 5px 5px 7px;
+    font-size: 32px;
+    margin-left: 10px;
 }
 
 #slogan p 
 {
-    font-size: 2.8em;
-    margin: 25px 5px 5px 7px;
+    font-size: 22px;
+    margin-top: 25px;
 }
 
 /*Recherche par localisation*/
 
 form
 {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
-form
+form .icon_geo 
 {
-    height: 45px;
+    padding: 85px;
+    font-size: 20px;
 }
 
-form .icon_geo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #f2f2f2;
-    border-radius: 12px 0 0 12px;
-    padding: 45px;
+.fas fa-map-marker-alt
+{
+    font-size: 20px;
 }
 
-form input[type="text"] {
-    color: #000;
-    font-size: 34px;
-    font-weight: bold;
+form input[type="text"]
+{
     padding: 44px;
-    font-family: 'Raleway-Bold', sans-serif;
-    border: solid 1px #f2f2f2;
-    outline: none;
-    text-align: center;
+    font-size: 20px;
+    width: 240px;
 }
 
 form #search
@@ -627,46 +988,420 @@ form #search
     text-align: center;
 }
 
+#loupe
+{
+    display: block;
+}
+
+#search_text
+{
+    display: none;
+}
+
 /*Les filtres*/ 
+
 .titre_filtres
 {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .les_filtres
 {
     margin-top: 10%;
-    font-size: 20px;
-    display: block;
+    font-size: 28px;
+    display:block;
     margin-left: 0;
+}
+
+.all_filters
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .filtres /*concerne les boutons*/
 {
-    border-radius: 40px 40px 40px 40px;
-    background-color: #ffffff;
-    margin: 10px;
-    border: solid 2px;
-    cursor: pointer;
-    height: 50px;
-    border-color: #e7e7e7; 
-    padding: 5px;
+    margin-top: 10px;
+    height: 40px;
     width: auto;
 }
 
 .texte_filtre
 {
-  font-size: 25px;
-  color: black;
-  font-weight: 900;
-  padding-left: 6px;
-  padding-right: 7px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* principal */
+.icones_filtres
+{
+  font-size: 20px;
+  padding: 6.5px;
+  line-height: 8px;
+}
 
+/* les infos */
+
+.infos /* aligne le texte au boutons */ 
+{
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.infos, p
+{
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.icones_infos
+{
+    border-radius: 50%;
+    color: #0065fc;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.fas fa-info
+{
+    margin-left: 5px;
+}
+
+/* La barre de recherche */ 
+
+form
+{
+ 
+}
+
+form .icon_geo
+{
+    padding: 25px;
+}
+
+form input[type="text"]
+{
+    padding: 25px;
+    width: 140px;
+    font-size: 14px;
+    text-align: center;
+}
+
+form #search
+{
+    padding: 25px;
+    border-radius: 8px;
+    margin-left: -5px;
+}
+
+#loupe
+{
+    font-size: 20px;
+}
+
+/*Les filtres*/
+
+.titre_filtres
+{
+    font-size: 20px;
+}
+
+/* Les plus populaires */
+
+section
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+aside
+{
+    border-radius: 0;
+    margin-left: -65px;
+    margin-right: -70px;
+    width: 580px;
+}
+
+.popular_card
+{
+    margin-top: 5%;
+    margin-left: 48px;
+    border-radius: 10px 10px 10px 10px;
+    width: 500px;
+}
+
+.sectiontitle
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectiontitle, h1
+{
+    margin-left: 55px;
+}
+
+.popular_image
+{
+    border-radius: 10px 0px 0px 10px;
+    padding: 1%;
+    height: 130px;
+    object-fit: cover;
+    width: 200px;
+}
+
+.all_popular_cards
+{
+    margin-bottom: 40px;
+}
+
+.popular_part_text
+{
+    flex-direction: column;
+    margin-left: 10px;
+    color: black;
+}
+
+.popular_price
+{
+    font-size: 16px;
+    margin-left: 0;
+}
+.popular_card
+{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 3px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+.popular_score
+{
+    font-size: 15px;
+    padding-bottom: 19px;
+}
+
+.popular_card_title
+{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Hebergements*/
+
+.hebergement 
+{
+    border-radius: 0;
+    margin-left: -28px;
+    width: 538px;
+}
+
+.titre_section
+{
+    font-size: 20px;
+    margin-top: 9%;
+}
+
+
+.hebergement_une_carte
+{
+    width: auto;
+    margin-left: 5px;
+}
+
+.hebergement_image
+{
+    width: 520px;
+    height: 210px;
+    padding: 3%;
+    object-fit: fill;
+}
+
+.hebergement_photo
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 490px;
+    height: 200px;
+}
+
+.hebergement_text_card
+{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.hebergement_titre_card, h1
+{
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.see_more
+{
+    margin-left: 23px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.hebergement_prix
+{
+    margin-top: 3%;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    font-size: 18px;
+}
+
+.hebergement_note
+{
+    margin-left: 1%;
+    font-size: 18px;
+}
+
+/*les activités à marseille*/ 
+.activities
+{
+    height: 20px;
+}
+
+.activity_part
+{
+    margin-left: -15px;
+    margin-bottom: 40px;
+    width: 420px;
+}
+
+.activity_title
+{
+    margin-left: 14px;
+}
+
+.activity_image
+{
+    height: 200px;
+    width: 490px;
+}
+
+.column1
+{
+    height: 260px;
+    margin-bottom: 20px;
+    width: 490px;
+}
+
+.activity_image2
+{
+    height: 200px;
+    width: 490px;
+}
+
+.column2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.column2_2part
+{
+    height: 260px;
+    margin-bottom: 20px;
+    width: 490px;
+}
+
+.column2_3part
+{
+    height: 260px;
+    margin-bottom: 20px;
+    width: 490px;
+}
+
+.activity_image3
+{
+    height: 200px;
+}
+
+.all_activity_cards
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+}
+
+/* Le footer */ 
+
+footer 
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-top: 0;
+}
+
+.about
+{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.about h3
+{
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+
+.noshebergements
+{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.bloc1
+{
+    font-size: 25px;
+}
+
+.noshebergements h3
+{
+    font-size: 30px;
+}
+
+.bloc2
+{
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.assistance
+{
+    margin-top: 20px;
+    margin-left: 34px;
+    margin-left: 70px;
+}
+
+.assistance h3
+{
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.bloc3
+{
+    font-size: 25px;
+}
 
 
 }
 /*Fin Responsive*/
+
+/*
+
+*/
