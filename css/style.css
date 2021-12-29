@@ -546,11 +546,16 @@ aside, h1
 {
     margin-bottom: 30px;
 }
+
+
 .activity_texte
 {
     margin-left: 20px;
     display: flex;
+    margin-bottom: 20px;
 }
+
+
 
 
 .activity_image
@@ -1043,7 +1048,6 @@ form #search
 {
   font-size: 20px;
   margin-left: -8.7px;
-  line-height: -1em;
   padding: 7px;
 }
 
