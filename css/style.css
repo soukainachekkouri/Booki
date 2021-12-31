@@ -816,7 +816,7 @@ aside
 
 .popular_image
 {
-    width: 2400x;
+    width: 2400px;
 }
 
 .popular_score
@@ -1260,7 +1260,7 @@ aside
 {
     font-size: 20px;
     margin-top: 9%;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .hebergement_all_cards
@@ -1381,7 +1381,7 @@ aside
 
 .activity_box_texte
 {
-    margin-bottom: 20;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
