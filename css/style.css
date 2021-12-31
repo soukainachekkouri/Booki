@@ -672,6 +672,13 @@ body
     padding: 0;
 }
 
+#main_container
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
 /*Header*/ 
 
 
@@ -686,13 +693,6 @@ nav a:hover
 }
 
 /* Le container*/ 
-
-#main_container
-{
-    margin: 0;
-    padding: 0;
-    
-}
 
 h3
 {
@@ -726,7 +726,7 @@ form
 input[type="text"]
 {
     font-size: 18px;
-    text-align: start;
+    text-align: center;
 }
 
 #search
@@ -766,7 +766,7 @@ input[type="text"]
 
 .icones_filtres
 {
-    padding: 10px;
+    padding: 8px;
     margin-left: -5.4px;
 }
 
@@ -802,6 +802,7 @@ aside
     padding: 0;
     margin: 0;
     height: 100%;
+    border-radius: 0;
 }
 
 .sectiontitle
@@ -1019,7 +1020,7 @@ footer
 
 #slogan p 
 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 25px;
     margin-left: 4%;
 }
